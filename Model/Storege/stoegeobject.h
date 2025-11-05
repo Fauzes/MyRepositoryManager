@@ -2,35 +2,48 @@
 #define STOEGEOBJECT_H
 
 #include <QObject>
-#include "types_storege_objects.h"
+#include "Interfacer/Storege/IStoegeObject.h"
 
-class StoegeObject : public QObject
+class StoegeObject : public QObject, public IStoegeObject
 {
     Q_OBJECT
 public:
     explicit StoegeObject(QObject *parent = nullptr);
-    StoegeObject(types_storege_objects type, uint number, QObject *parent = nullptr);
+    explicit StoegeObject(types_storege_objects type, QString number, QObject *parent = nullptr);
+    explicit StoegeObject(StoegeObject* obj);
 
-    uint get_number();
-    types_storege_objects get_type();
-    bool get_isFull();
-    bool get_isDiscarded();
+    MyNumber* get_number() override;
+    void set_number(MyNumber* number) override;
 
-    void set_isFull(bool full);
-    void set_isDiscarded();
+    DiscardedStatys* get_discardedStattus() override;
+    void set_discardedStatus(DiscardedStatys* discarded) override;
 
-private:
+    MyGeometry* get_geometry() override;
+    void set_geometry(MyGeometry* geometry) override;
+
+    FullStatus* get_fullStatus() override;
+    void set_fullStatus(FullStatus* full) override;
+
+    types_storege_objects get_type() override;
+
+
+protected:
     //номер объекта для хранения
-    uint number;
+    MyNumber* number;
     //тип объета хранения
     types_storege_objects type;
     //заполнен ли объект
-    bool isFull;
+    FullStatus* isFull;
     //списан ли объект
-    bool isDiscarded;
+    DiscardedStatys* isDiscarded;
+    //размеры объекта
+    MyGeometry* geometry;
+
+    private:
+    void make_obj();
 
 signals:
 
 };
 
-#endif // STOEGEOBJECT_H
+#endif  STOEGEOBJECT_H

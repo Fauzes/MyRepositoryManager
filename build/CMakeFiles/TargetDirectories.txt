@@ -1,4 +1,4 @@
-C:/Projects/myProj/build/CMakeFiles/MyRepositryManager.dir
-C:/Projects/myProj/build/CMakeFiles/edit_cache.dir
-C:/Projects/myProj/build/CMakeFiles/rebuild_cache.dir
-C:/Projects/myProj/build/CMakeFiles/MyRepositryManager_autogen.dir
+C:/Projects/MyRepositoryManager/build/CMakeFiles/MyRepositryManager.dir
+C:/Projects/MyRepositoryManager/build/CMakeFiles/edit_cache.dir
+C:/Projects/MyRepositoryManager/build/CMakeFiles/rebuild_cache.dir
+C:/Projects/MyRepositoryManager/build/CMakeFiles/MyRepositryManager_autogen.dir

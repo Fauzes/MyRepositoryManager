@@ -5,30 +5,31 @@ Wardrobe_storege_obj::Wardrobe_storege_obj()
 
 }
 
-Wardrobe_storege_obj::Wardrobe_storege_obj(uint number, uint heigth, uint width, uint length, uint countShelf) : StoegeObject(wardrobe_obj, number)
+Wardrobe_storege_obj::Wardrobe_storege_obj(uint number, float heigth, float width, float length, uint countShelf) : StoegeObject(wardrobe_obj, number)
 {
-    this->heigth = heigth;
-    this->width = width;
-    this->length = length;
-    this->countShelf = countShelf;
+    geometry.set_heigth(heigth);
+    geometry.set_length(length);
+    geometry.set_width(width);
+
+    //добавить добавление полок
 }
 
-uint Wardrobe_storege_obj::get_heigth()
+float Wardrobe_storege_obj::get_heigth()
 {
-    return heigth;
+    return geometry.get_heigth();
 }
 
-uint Wardrobe_storege_obj::get_width()
+float Wardrobe_storege_obj::get_width()
 {
-    return width;
+    return geometry.get_width();
 }
 
-uint Wardrobe_storege_obj::get_length()
+float Wardrobe_storege_obj::get_length()
 {
-    return length;
+    return geometry.get_length();
 }
 
 uint Wardrobe_storege_obj::get_countShelf()
 {
-    return countShelf;
+    return shelfs.count();
 }

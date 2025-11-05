@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 project(MyRepositryManager LANGUAGES CXX)
 
@@ -49,6 +49,22 @@ else()
     Model/Storege/box_s_storege_obj.h
     Model/Storege/box_storege_obj.cpp
     Model/Storege/box_storege_obj.h
+    Model/base/MyGeometry.h
+    Model/base/MyGeometry.cpp
+    Model/base/FullStatus.h
+    Model/base/FullStatus.cpp
+    Model/Storege/Shelf.h
+    Model/Storege/Shelf.cpp
+    Model/base/DiscardedStatys.h
+    Model/base/DiscardedStatys.cpp
+    Model/base/MyNumber.h
+    Model/base/MyNumber.cpp
+    Interfacer/base/IDiscarded_obj.h
+    Interfacer/base/IFull_obj.h
+    Interfacer/base/ILimit_obj.h
+    Interfacer/base/IMyGeometry_obj.h
+    Interfacer/base/IMyNumber_obj.h
+    Interfacer/Storege/IStoegeObject.h
   )
 endif()
 

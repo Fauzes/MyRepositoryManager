@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\MyRepositryManager.dir/objects.a
-C:\Qt\Qt5.14.2\Tools\mingw730_64\bin\ar.exe qc CMakeFiles\MyRepositryManager.dir/objects.a @CMakeFiles\MyRepositryManager.dir\objects1.rsp
-c:\Qt\Qt5.14.2\Tools\mingw730_64\bin\g++.exe -Wl,--whole-archive CMakeFiles\MyRepositryManager.dir/objects.a -Wl,--no-whole-archive -o MyRepositryManager.exe -Wl,--out-implib,libMyRepositryManager.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyRepositryManager.dir\linkLibs.rsp
